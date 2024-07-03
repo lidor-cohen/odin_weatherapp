@@ -1,5 +1,4 @@
-import apiKey from "../weatherapikey.txt";
-
+import apiKey from "../key.txt";
 function WeatherController() {
   this.forecast_weather_url =
     "http://api.weatherapi.com/v1/forecast.json?key=" + apiKey + "&q=";
