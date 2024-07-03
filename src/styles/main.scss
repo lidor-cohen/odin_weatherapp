@@ -23,7 +23,7 @@ body {
   background-color: $primary-color;
 
   padding: 1.5em;
-  width: 80vw;
+  width: 70vw;
   height: 80vh;
 
   position: absolute;
@@ -39,77 +39,6 @@ body {
   gap: 2em;
 }
 
-#navbar {
-  height: 100%;
-  width: 100px;
-  background-color: $secondary-background-color;
-  border-radius: 20px;
-  
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  padding: .5em;
-  gap: 10px;
-}
-
-.logo {
-  border: 1px solid rgba(255, 255, 255, 0.289);
-  border-radius: inherit;
-  background-color: rgba(255,255,255,0.1);
-  width: 70px;
-
-  padding: .7em;
-  margin: 20px 0;
-}
-
-.nav-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0.6em;
-  width: 100%;
-
-  border-radius: .5em;
-  gap: 10px;
-
-  img {
-    width: 20px;
-    height: auto;
-  }
-
-  &:hover {
-    color: white;
-    img {
-      filter: invert(100%) sepia(100%) saturate(5%) hue-rotate(53deg) brightness(106%) contrast(100%);
-    }
-  }
-}
-
-.selected {
-  color: white;
-  img {
-    filter: invert(100%) sepia(100%) saturate(5%) hue-rotate(53deg) brightness(106%) contrast(100%);
-  }
-}
-
 .svg-icon {
   filter: invert(72%) sepia(1%) saturate(2369%) hue-rotate(177deg) brightness(83%) contrast(78%);
-}
-
-main {
-  flex: 1;
-}
-
-.primary-text-input {
-  padding: 10px;
-  width: 100%;
-
-  appearance: none;
-  border: none;
-  outline: none;
-  font-size: 0.8em;
-  border-radius: .3em;
-  background-color: $secondary-background-color;
-  color: $primary-text-color;
 }

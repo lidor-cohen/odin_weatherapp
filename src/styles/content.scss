@@ -1,0 +1,64 @@
+@import "./main.scss";
+
+main {
+    flex: 1;
+
+    display: flex;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+}
+
+.right-section {
+    flex: 0.5;
+}
+  
+.primary-text-input {
+    padding: 10px;
+    width: 100%;
+
+    appearance: none;
+    border: none;
+    outline: none;
+    font-size: 0.8em;
+    border-radius: .3em;
+    background-color: $secondary-background-color;
+    color: $primary-text-color;
+}
+
+.large-display {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    
+    .display-text {
+        color: $primary-text-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        h2 {
+            font-size: 2.5em;
+        }
+
+        p {
+            color: $secondary-text-color;
+            margin: 0.5em 0;
+        }
+
+        h1 {
+            font-size: 3em;
+
+        }
+
+    }
+
+    img {
+        width: 200px;
+        height: auto;
+    }
+}
