@@ -38,6 +38,22 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|gif)$/,
         type: "asset/resource",
       },
+
+      {
+        test: /\.txt$/i,
+        type: "asset/source",
+      },
+
+      {
+        test: /\.m?js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"],
+          },
+        },
+      },
     ],
   },
 };
