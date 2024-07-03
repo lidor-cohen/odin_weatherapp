@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const isDevserver = process.env.NODE_LIVE;
 
 module.exports = {
   entry: "./src/index.js",
@@ -7,7 +8,7 @@ module.exports = {
   output: {
     filename: "bundle.[contenthash].js",
     path: path.resolve(__dirname, "dist"),
-    clean: true,
+    clean: !isDevserver,
   },
 
   plugins: [
@@ -19,6 +20,10 @@ module.exports = {
 
   module: {
     rules: [
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
       {
         test: /\.scss$/,
         use: ["style-loader", "css-loader", "sass-loader"],
