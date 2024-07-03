@@ -14,7 +14,6 @@ WeatherController.prototype = {
       const data = response.json();
       return data;
     } catch (error) {
-      console.log("Error fetching data:", error);
       return null;
     }
   },
@@ -59,6 +58,5 @@ WeatherController.prototype = {
 };
 
 const weatherController = new WeatherController();
-weatherController.fetchData("Ashdod").then((data) => console.log(data));
 
 export { weatherController };
