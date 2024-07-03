@@ -33,7 +33,7 @@ main {
 }
 
 .large-display {
-  flex: 2;
+  flex: 1;
   display: flex;
   justify-content: space-between;
   padding: 20px;
@@ -96,6 +96,11 @@ main {
   border-radius: 15px;
   height: 100%;
   background-color: $secondary-background-color;
+
+  p {
+    text-transform: uppercase;
+    font-weight: 800;
+  }
 }
 
 .today-forecast {
@@ -151,5 +156,46 @@ main {
 
   h2 {
     color: $primary-text-color;
+  }
+}
+
+.d7-dayforecast {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 30px 0;
+
+  .d7-forecast-item {
+    display: flex;
+    align-items: center;
+
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.273);
+    border-radius: 15px;
+
+    .d7-forecast-primary-temp {
+      font-weight: bold;
+    }
+
+    h4 {
+      font-weight: 300;
+    }
+
+    display: flex;
+    justify-content: space-between;
+
+    .d7-forecast-icontext-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      p {
+        text-transform: none;
+      }
+    }
+  }
+
+  img {
+    width: 30px;
   }
 }
