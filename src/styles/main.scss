@@ -22,8 +22,8 @@ body {
   background-color: $primary-color;
 
   padding: 1.5em;
-  width: 70vw;
-  height: 80vh;
+  width: 60vw;
+  height: 90vh;
 
   position: absolute;
   top: 50%;
@@ -32,7 +32,6 @@ body {
 
   border-radius: 1em;
   box-shadow: 0 8px 20px 5px rgba(0, 0, 0, 0.5);
-  border: 0.1em solid rgba(255, 255, 255, 0.294);
 
   display: flex;
   gap: 20px;

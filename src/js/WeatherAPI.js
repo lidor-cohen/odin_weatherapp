@@ -28,7 +28,7 @@ WeatherController.prototype = {
       for (const index in forecastHours) {
         forecastHourMinified.push({
           condition: forecastHours[index].condition,
-          time: forecastHours[index].time,
+          time: forecastHours[index].time.split(" ")[1],
         });
       }
 
@@ -52,8 +52,8 @@ WeatherController.prototype = {
         },
       };
     } catch (error) {
-      console.error("Error fetching data:", error);
-      return null;
+      alert("There is no such city!");
+      return this.getAllData("London");
     }
   },
 };
