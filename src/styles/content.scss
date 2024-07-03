@@ -4,6 +4,7 @@ main {
     flex: 1;
 
     display: flex;
+    gap:20px;
 }
 
 .left-section {
@@ -11,6 +12,7 @@ main {
     flex-direction: column;
 
     flex: 1;
+    gap: 20px
 }
 
 .right-section {
@@ -31,9 +33,10 @@ main {
 }
 
 .large-display {
+    flex: 1;
     display: flex;
     justify-content: space-between;
-    padding: 2em;
+    padding: 20px;
     
     .display-text {
         color: $primary-text-color;
@@ -52,13 +55,103 @@ main {
 
         h1 {
             font-size: 3em;
-
         }
-
     }
 
     img {
-        width: 200px;
+        width: 180px;
         height: auto;
     }
+
+    @media (max-width: 1300px) {
+        img {
+            width: 100px;
+        }
+    }
+
+    @media (max-width: 970px) {
+        img {
+            display: none;
+        }
+        
+    }
+}
+
+.horizontal-section {
+    flex: 1;
+    background-color: $secondary-background-color;
+    border-radius: 15px;
+    padding: 20px;
+
+    text-transform: uppercase;
+    font-size: 0.9em;
+
+    display: flex;
+    flex-direction: column;
+    gap:20px
+}
+
+.vertical-section {
+    flex: 1;
+    padding: 20px;
+    border-radius: 15px;
+    height: 100%;
+    background-color: $secondary-background-color;
+}
+
+.today-forecast {
+    display: flex;
+    justify-content: space-evenly;
+
+    
+    hr {
+        border: 1px solid rgba(255, 255, 255, 0.152);
+        outline: none;
+    }
+}
+
+.forecast-horizontal-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+    p {
+        font-weight: 800;
+    }
+    h4 {
+        font-size: 20px;
+        color: $primary-text-color;
+    }
+    img {
+        width: 50px;
+    }
+
+}
+
+.air-conditions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    height: 100%;
+}
+
+.air-con-item {
+    display: flex;
+    gap: 10px;
+    text-transform: none;
+
+    h2 {
+        color: $primary-text-color;
+    }
+
+    img {
+        width: 25px;
+    }
+}
+
+svg {
+    width: 25px;
+    height: auto;
 }
