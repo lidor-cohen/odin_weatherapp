@@ -1,57 +1,56 @@
 @import "./main.scss";
 
 #navbar {
-    height: 100%;
-    width: 100px;
-    background-color: $secondary-background-color;
-    border-radius: 20px;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
-    padding: .5em;
-    gap: 10px;
+  height: 100%;
+  width: 100px;
+  background-color: $secondary-background-color;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 0.5em;
+  gap: 10px;
+}
+
+.logo {
+  border: 1px solid rgba(255, 255, 255, 0.289);
+  border-radius: inherit;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 70px;
+
+  padding: 0.7em;
+  margin: 20px 0;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.6em;
+  cursor: pointer;
+  width: 100%;
+
+  border-radius: 0.5em;
+  gap: 10px;
+
+  img {
+    width: 20px;
+    height: auto;
   }
-  
-  .logo {
-    border: 1px solid rgba(255, 255, 255, 0.289);
-    border-radius: inherit;
-    background-color: rgba(255,255,255,0.1);
-    width: 70px;
-  
-    padding: .7em;
-    margin: 20px 0;
-  }
-  
-  .nav-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0.6em;
-    cursor: pointer;
-    width: 100%;
-  
-    border-radius: .5em;
-    gap: 10px;
-  
-    img {
-      width: 20px;
-      height: auto;
-    }
-  
-    &:hover {
-      color: white;
-      img {
-        filter: invert(100%) sepia(100%) saturate(5%) hue-rotate(53deg) brightness(106%) contrast(100%);
-      }
-    }
-  }
-  
-  .selected {
+
+  &:hover {
     color: white;
-    img {
-      filter: invert(100%) sepia(100%) saturate(5%) hue-rotate(53deg) brightness(106%) contrast(100%);
+    svg {
+      color: white;
     }
   }
-  
+}
+
+.selected {
+  color: white;
+  svg {
+    color: white;
+  }
+}

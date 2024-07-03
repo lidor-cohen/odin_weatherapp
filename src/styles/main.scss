@@ -18,7 +18,6 @@ body {
   color: $secondary-text-color;
 }
 
-
 #main-wrapper {
   background-color: $primary-color;
 
@@ -39,6 +38,8 @@ body {
   gap: 20px;
 }
 
-.svg-icon {
-  filter: invert(72%) sepia(1%) saturate(2369%) hue-rotate(177deg) brightness(83%) contrast(78%);
+svg {
+  color: $secondary-text-color;
+  width: 25px;
+  height: auto;
 }
